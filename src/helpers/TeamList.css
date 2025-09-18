@@ -1,0 +1,76 @@
+@media (max-width: 700px) {
+  .team-list-container {
+    min-height: 40vh;
+    padding: 8px 2px;
+  }
+  .team-list-form {
+    max-width: 95vw;
+    padding: 14px 6px;
+    border-radius: 8px;
+  }
+  .team-list-form label {
+    margin-bottom: 4px;
+    font-size: 0.95em;
+  }
+  .team-list-form input {
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    border-radius: 4px;
+  }
+  .team-list-form button {
+    padding: 8px 0;
+    font-size: 0.95em;
+    border-radius: 5px;
+  }
+}
+.team-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.team-list-form {
+  background: #f8f9fa;
+  padding: 28px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+.team-list-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.team-list-form input {
+  width: 100%;
+  padding: 7px 10px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #fff;
+}
+
+.team-list-form button {
+  width: 100%;
+  padding: 9px 0;
+  background: #034011;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.team-list-form button:hover {
+  background: black;
+}

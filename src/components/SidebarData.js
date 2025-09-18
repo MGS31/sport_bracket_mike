@@ -1,25 +1,18 @@
 import React from 'react';
-import * as AiIcons from 'react-icons/ai';
-import { RiFilePaperLine } from 'react-icons/ri';
-import { FaPeopleGroup } from 'react-icons/fa6';
+import { FaHome } from 'react-icons/fa';
+import { TbTournament } from 'react-icons/tb';
 
 export const SidebarData = [
   {
     title: 'Home',
     path: '/',
-    icon: <AiIcons.AiFillHome />,
+    icon: <FaHome />,
     cName: 'nav-text',
   },
   {
-    title: 'Brackets',
+    title: 'Tournament',
     path: '/brackets',
-    icon: <RiFilePaperLine />,
-    cName: 'nav-text',
-  },
-  {
-    title: 'Team',
-    path: '/team',
-    icon: <FaPeopleGroup />,
+    icon: <TbTournament />,
     cName: 'nav-text',
   },
 ];

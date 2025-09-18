@@ -1,0 +1,88 @@
+@media (max-width: 700px) {
+  .tourney-form-container {
+    min-height: 40vh;
+    padding: 8px 2px;
+  }
+  .tourney-form {
+    max-width: 95vw;
+    padding: 14px 6px;
+    border-radius: 8px;
+  }
+  .tourney-form label {
+    margin-bottom: 4px;
+    font-size: 0.95em;
+  }
+  .tourney-form input,
+  .tourney-form select {
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    border-radius: 4px;
+  }
+  .tourney-form button {
+    padding: 8px 0;
+    font-size: 0.95em;
+    border-radius: 5px;
+  }
+}
+.button {
+  background-color: #034011;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.tourney-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 72vh;
+}
+
+.tourney-form {
+  background: #f8f9fa;
+  padding: 32px 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+.tourney-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.tourney-form input,
+.tourney-form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #fff;
+}
+
+.tourney-form button {
+  width: 100%;
+  padding: 10px 0;
+  background: #034011;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tourney-form button:hover {
+  background: black;
+}

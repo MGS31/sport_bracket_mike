@@ -1,21 +1,29 @@
-import React from 'react';
-import '../App.css';
+import React, { useState } from 'react';
+import '../helpers/TourneyForm.js';
+import './Brackets.css';
+import TourneyForm from '../helpers/TourneyForm.js';
 
-function Bracket() {
-  const handleSubmit = (event) => {
+function Brackets() {
+  const [showForm, setShowForm] = useState(false);
+
+  const handleClick = (event) => {
     event.preventDefault();
-    console.log('Add New Bracket button pushed');
+    setShowForm(true);
   };
 
   return (
-    <div className="bracket" value={{ color: 'red' }}>
-      <h1>
-        <button type="submit" onSubmit={handleSubmit}>
-          Add New Bracket
-        </button>
-      </h1>
-    </div>
+    <>
+      {!showForm ? (
+        <div className="bracket">
+          <button className="bracket-button" onClick={handleClick}>
+            Add New Tournament
+          </button>
+        </div>
+      ) : (
+        <TourneyForm />
+      )}
+    </>
   );
 }
 
-export default Bracket;
+export default Brackets;
