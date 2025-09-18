@@ -1,0 +1,23 @@
+    /* MyCenteredContent.css */
+    .center-container {
+      display: flex; /* Makes the container a flex container */
+      justify-content: center; /* Centers content horizontally along the main axis */
+      align-items: center; /* Centers content vertically along the cross axis */
+      height: 100vh; /* Ensures the container takes up the full viewport height */
+      width: 100vw; /* Ensures the container takes up the full viewport width */
+    }
+
+    .centered-div {
+      /* Optional: Add styles for the actual content div */
+      background-color: lightblue;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .home {
+      background-color: lightblue;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
