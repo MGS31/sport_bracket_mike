@@ -42,6 +42,8 @@ function TourneyForm() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                required
+                pattern="\{3,75}"
               />
             </label>
             <label>
@@ -50,6 +52,9 @@ function TourneyForm() {
                 name="number"
                 value={formData.number}
                 onChange={handleChange}
+                required
+                min="2"
+                max="20"
               >
                 {Array.from({ length: 19 }, (_, i) => i + 2).map((number) => (
                   <option key={number} value={number}>
