@@ -34,6 +34,7 @@ const generateNextRound = (prevRound) => {
 };
 
 const TourneyBracket = ({ tournamentName }) => {
+  const [tourneyName, setTourneyName] = useState('');
   const [rounds, setRounds] = useState([]);
   const [currentRoundIdx, setCurrentRoundIdx] = useState(0);
   const [mode, setMode] = useState('');
@@ -46,6 +47,8 @@ const TourneyBracket = ({ tournamentName }) => {
     const teamObj = JSON.parse(localStorage.getItem(tournamentName));
     let teams = teamObj?.teamNames || [];
     let mode = teamObj?.mode || 'random';
+    let tourneyName = teamObj?.name || '';
+    setTourneyName(tourneyName);
     setMode(mode);
     setNumTeams(teams.length);
     setTeamList(teams);
@@ -146,6 +149,7 @@ const TourneyBracket = ({ tournamentName }) => {
           </button>
         </form>
       )}
+      <h2>{tourneyName}</h2>
       {bracketStarted &&
         rounds.map((round, roundIdx) => (
           <div key={roundIdx} className="bracket-round">
