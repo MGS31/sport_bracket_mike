@@ -7,6 +7,7 @@ function TourneyForm() {
   const [formData, setFormData] = useState({
     name: '',
     number: 2,
+    mode: 'random',
   });
 
   const handleChange = (e) => {
@@ -22,6 +23,7 @@ function TourneyForm() {
     const dataToStore = {
       ...formData,
       number: Number(formData.number),
+      mode: formData.mode,
     };
     console.log('Form Data:', formData);
     localStorage.setItem(formData.name, JSON.stringify(dataToStore));
@@ -56,6 +58,10 @@ function TourneyForm() {
                 ))}
               </select>
             </label>
+            <select name="mode" value={formData.mode} onChange={handleChange}>
+              <option value="manual">Manual</option>
+              <option value="random">Random</option>
+            </select>
             <button type="submit">Submit</button>
           </form>
         </div>
