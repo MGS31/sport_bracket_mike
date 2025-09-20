@@ -49,6 +49,7 @@ const TeamList = ({ tournamentName }) => {
                     }
                     onChange={(e) => handleTeamNameChange(index, e)}
                     required
+                    pattern="\{3,15}"
                   />
                 </div>
               ))}
