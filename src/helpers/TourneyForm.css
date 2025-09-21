@@ -28,10 +28,15 @@
 .button {
   background-color: #034011;
   color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: none;
   cursor: pointer;
+  font-weight: bold;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 
@@ -46,10 +51,11 @@
 .tourney-form {
   background: #f8f9fa;
   padding: 32px 24px;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   width: 100%;
+  margin: 50px auto;
   max-width: 400px;
+  text-align: center;
+  position: relative;
 }
 
 .tourney-form label {
@@ -61,25 +67,31 @@
 
 .tourney-form input,
 .tourney-form select {
-  width: 100%;
-  padding: 8px 10px;
+  width: 80%;
+  padding: 20px 30px;
   margin-bottom: 18px;
-  border: 1px solid #d1d5db;
-  border-radius: 5px;
+  border: 0 none;
+  border-radius: 3px;
   font-size: 1em;
   background: #fff;
+  position: relative;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
 }
 
 .tourney-form button {
-  width: 100%;
-  padding: 10px 0;
+  width: 80%;
   background: #034011;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.05em;
-  font-weight: 600;
   cursor: pointer;
+  font-weight: bold;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
   transition: background 0.2s;
 }
 
